@@ -1,0 +1,14 @@
+{
+  "name": "Game.Health.Unity",
+  "rootNamespace": "Game.Health",
+  "references": ["Game.Health.Core"],
+  "includePlatforms": [],
+  "excludePlatforms": [],
+  "allowUnsafeCode": false,
+  "overrideReferences": false,
+  "precompiledReferences": [],
+  "autoReferenced": true,
+  "defineConstraints": [],
+  "versionDefines": [],
+  "noEngineReferences": false
+}
