@@ -19,6 +19,13 @@ public static class EventManager
     public static event Action<string> OnItemCollected;
 
 
+    // SISTEMA DE COMBATE
+
+    // Evento chamado quando um inimigo é derrotado.
+    // Recebe o nome do inimigo.
+    public static event Action<string> OnEnemyDefeated;
+
+
     // SISTEMA DE SALVAMENTO
 
     // Evento chamado quando algum sistema solicita
@@ -40,6 +47,12 @@ public static class EventManager
     // Exemplo: TriggerItemCollected("Poção");
     public static void TriggerItemCollected(string item)
         => OnItemCollected?.Invoke(item);
+
+
+    // Dispara o evento de inimigo derrotado.
+    // Exemplo: TriggerEnemyDefeated("Slime");
+    public static void TriggerEnemyDefeated(string inimigo)
+        => OnEnemyDefeated?.Invoke(inimigo);
 
 
     // Dispara o evento de solicitação de salvamento.
